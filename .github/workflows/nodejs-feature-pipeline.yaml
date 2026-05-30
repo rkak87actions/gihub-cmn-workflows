@@ -22,3 +22,10 @@ jobs:
     steps:
       - name: nodejsfeaturepipeline
         uses: actions/checkout@v6
+
+      - name: display the inputs
+        run:  |
+          echo "project_name: ${{ inputs.proj }}"
+          echo "environment: ${{ inputs.env }}"
+          echo "deployment: ${{ inputs.deployment }}"
+          
